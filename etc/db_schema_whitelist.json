@@ -1,0 +1,13 @@
+{
+    "curd_table": {
+        "column": {
+            "id": true,
+            "name": true,
+            "email": true,
+            "description": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

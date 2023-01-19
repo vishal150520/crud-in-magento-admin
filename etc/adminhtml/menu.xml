@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Bluethink_Crud::first_level_demo"
+             title="Inchoo First Level Item"
+             module="Bluethink_Crud"
+             sortOrder="50"
+             resource="Bluethink_Crud::first_level_demo" />
+ 
+        <add id="Bluethink_Crud::second_level_demo"
+             title="Menu1"
+             module="Bluethink_Crud"
+             sortOrder="10"
+             action="crudadmin/index/index"
+             parent="Bluethink_Crud::first_level_demo"
+             resource="Bluethink_Crud::second_level_demo" />
+
+        <add id="Bluethink_Crud::third"
+             title="Menu2"
+             module="Bluethink_Crud"
+             sortOrder="20"
+             action="crud/index/index1"
+             parent="Bluethink_Crud::first_level_demo"
+             resource="Bluethink_Crud::third" />
+<!-- 
+        <add id="Bluethink_Crud::fourth"
+             title="Menu3"
+             module="Bluethink_Crud"
+             sortOrder="30"
+             action="menuitem/index/index"
+             parent="Bluethink_Crud::first_level_demo"
+             resource="Bluethink_Crud::fourth" /> -->
+    </menu>
+</config>
